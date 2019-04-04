@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 
-const routes = require('./routes/products')
+const routes = require('./routes/trades')
 
 const server = express()
 
