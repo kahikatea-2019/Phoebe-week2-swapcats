@@ -1,0 +1,100 @@
+body {
+  background-color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.navContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+  grid-template-areas:
+  "title empty empty button"
+  "title empty empty button"
+  "title empty empty button"
+  "line line line line";
+
+  padding: 0px;
+  background-color: white;
+}
+
+.navContainer nav {
+  grid-area: title;
+  display: flex;
+  flex-direction: row;
+}
+
+.navContainer .block {
+  grid-area: line;
+  background-color: green;
+  height: 5px;
+}
+
+.navContainer .buttonWrapper {
+  grid-area: button;
+  height: 100%;
+}
+.buttonWrapper button{
+  margin-top: 10px;
+  height: 50px;
+}
+
+.navContainer nav a {
+  text-decoration: none;
+  padding-left: 2vw;
+  padding-right: 5vw;
+}
+
+.navContainer nav a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.navContainer img {
+  width: 70px;
+  height: 70px;
+}
+
+.inputContainer {
+  min-height: 75px;
+  text-align: center;
+  margin: 50px;
+  background-color: green;
+}
+
+
+.categoriesContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "item1 item2 item3"
+  "item1 item2 item3"
+  "item1 item2 item3";
+  background: pink;
+  top: 50%;
+  min-height: 500px;
+}
+
+.categoriesContainer .cat1{
+  margin: 50px;
+  background-color: blue;
+  grid-area: item2;
+}
+
+.categoriesContainer .cat2{
+  margin: 50px;
+  background-color: blueviolet;
+  grid-area: item1;
+}
+
+.categoriesContainer .cat3{
+  margin: 50px;
+  background-color: peru;
+  grid-area: item3;
+}
+
+.buttonWrapper {
+  text-align: right;
+}
