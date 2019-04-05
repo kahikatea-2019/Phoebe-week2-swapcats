@@ -15,27 +15,34 @@ router.get('/', (req, res) => {
 //   res.render('main')
 // })
 
+// router.get('/shoes', (req, res) => {
+//   //This function renders shoes with a list of shoes products
+//   db.getShoes()
+//     .then(shoes => {
+//       res.render('shoes', shoes)
+//     })
+// })
+
 router.get('/shoes', (req, res) => {
-  //This function renders shoes with a list of shoes products
-  db.getShoes()
+  // This function renders shoes with a list of shoes products
+  db.getShoesUsers()
     .then(shoes => {
-      res.render('shoes', shoes)
+      res.render('shoes', { shoes })
     })
 })
 
 router.get('/electronics', (req, res) => {
-  //This function renders electronics with a list of shoes products
+  // This function renders electronics with a list of shoes products
   db.getPhoneUsers()
-    .first()
     .then(phones => {
-      res.render('electronics', phones)
+      res.render('electronics', { phones })
     })
 })
 
 router.get('/random', (req, res) => {
-  db.getBags()
+  db.getBagsUsers()
     .then(bags => {
-      res.render('random', bags)
+      res.render('random', { bags })
     })
 })
 
