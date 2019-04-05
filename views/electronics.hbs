@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cat.css">
-    <title>Swapcatz 🐱 - Electronics</title>
+    <title>Swapcatz 🐱 - Shoes</title>
   </head>
   
   <body
@@ -14,21 +14,19 @@
       <div class="navContainer">
         <nav>
           <h1 class="title"><a href="/">Swapcatz</a></h1>
-          <img class="logo" src="/logo.jpeg" alt="">
+          <img class="logo" src="/logo.png" alt="">
         </nav>
 
+
         <div class="block"></div>
+      <h1>Shoes</h1><br>
+      {{#each phones}}
       </div>
-
-      <h1>Electronics</h1><br>
-
       <h1>Description: {{product_description}}</h1>
-
-     <img src="{{img_url}}" alt="" style="max-height: 450px;">
-
+      <img src="{{img_url}}" alt="" style="max-height: 450px;">
       <h3>Name: {{name}}</h3>
       <h3>Email: {{email}}</h3>
-    
+      {{/each}}
     </div>
   </body>
 </html>

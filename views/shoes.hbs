@@ -14,21 +14,18 @@
       <div class="navContainer">
         <nav>
           <h1 class="title"><a href="/">Swapcatz</a></h1>
-          <img class="logo" src="/logo.jpeg" alt="">
+          <img class="logo" src="/logo.png" alt="">
         </nav>
 
         <div class="block"></div>
+      <h1>Shoes</h1><br>
+      {{#each shoes}}
       </div>
-
-      <h1>Shoes</h1>
-
-      <h1>product_description</h1>
-
-      {{!-- <img src="/{{image_url}}"> --}}
-
-      <h3>name</h3>
-      <h3>email</h3>
-    
+      <h1>Description: {{product_description}}</h1>
+      <img src="{{img_url}}" alt="" style="max-height: 450px;">
+      <h3>Name: {{name}}</h3>
+      <h3>Email: {{email}}</h3>
+      {{/each}}
     </div>
   </body>
 </html>
