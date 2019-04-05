@@ -11,7 +11,8 @@ module.exports = {
   addUser: addUser,
   addProduct: addProduct,
   editUser: editUser,
-  editProduct: editProduct
+  editProduct: editProduct,
+  getPhoneUsers: getPhoneUsers
 }
 
 function getUsers (db = connection) {
@@ -30,7 +31,7 @@ function getUser (id, db = connection) {
 
 function getShoes (db = connection) {
   return db('products')
-    .where('product_category', 'shoes')
+    .where('product_category', 'shoe')
     .select()
 }
 
@@ -42,7 +43,14 @@ function getBags (db = connection) {
 
 function getPhones (db = connection) {
   return db('products')
-    .where('product_category', 'phones')
+    .where('product_category', 'phone')
+    .select()
+}
+
+function getPhoneUsers (id, db = connection) {
+  // Combines electronics and user
+  return db('products')
+    .join('users', 'users.id', 'products.user_id')
     .select()
 }
 

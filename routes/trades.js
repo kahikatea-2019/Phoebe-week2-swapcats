@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
 // })
 
 router.get('/shoes', (req, res) => {
+  //This function renders shoes with a list of shoes products
   db.getShoes()
     .then(shoes => {
       res.render('shoes', shoes)
@@ -23,7 +24,9 @@ router.get('/shoes', (req, res) => {
 })
 
 router.get('/electronics', (req, res) => {
-  db.getPhones()
+  //This function renders electronics with a list of shoes products
+  db.getPhoneUsers()
+    .first()
     .then(phones => {
       res.render('electronics', phones)
     })
