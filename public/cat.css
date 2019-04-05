@@ -39,13 +39,14 @@ body {
 }
 
 .navContainer nav a {
+  color: #3366ff;
   text-decoration: none;
   padding-left: 2vw;
   padding-right: 5vw;
 }
 
 .navContainer nav a:hover {
-  color: green;
+  color: #99ffcc;
   text-decoration: none;
 }
 

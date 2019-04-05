@@ -65,6 +65,7 @@ body {
 }
 
 .background {
+  min-height: 1080px;
   background-color: #ffcc00;
 }
 
@@ -91,7 +92,6 @@ body {
 .categoriesContainer a:hover {
   color: #00ffcc;
   opacity: 0.7;
-  text-decoration: none;
 }
 
 .categoriesContainer .cat1{
