@@ -5,7 +5,7 @@ const db = require('../db')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.render('layouts/main') 
+  res.render('layouts/shoes') 
 })
 
 module.exports = router
