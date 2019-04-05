@@ -46,11 +46,11 @@ router.get('/random', (req, res) => {
     })
 })
 
-// // Add New Product
+// Add New Product
 
-// router.get('/trades/newproduct', (req, res) => {
-//   res.render('newproduct')
-// })
+router.get('/add-form', (req, res) => {
+  res.render('form')
+})
 
 // router.post('/trades/newproduct/submit', (req, res) => {
 //   const newProduct = {
