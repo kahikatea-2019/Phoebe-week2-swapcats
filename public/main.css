@@ -1,0 +1,121 @@
+body {
+  background-color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.navContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+  grid-template-areas:
+  "title empty empty button"
+  "title empty empty button"
+  "title empty empty button"
+  "line line line line";
+
+  padding: 0px;
+  background-color: white;
+}
+
+.navContainer nav {
+  grid-area: title;
+  display: flex;
+  flex-direction: row;
+}
+
+.navContainer .block {
+  grid-area: line;
+  background-color: #3366ff;
+  height: 5px;
+}
+
+.navContainer .buttonWrapper {
+  grid-area: button;
+  height: 100%;
+}
+.buttonWrapper button{
+  margin-top: 10px;
+  height: 50px;
+}
+
+.navContainer nav a {
+  color: #3366ff;
+  text-decoration: none;
+  padding-left: 2vw;
+  padding-right: 5vw;
+}
+
+.navContainer nav a:hover {
+  color: #99ffcc;
+  text-decoration: none;
+}
+
+.navContainer img {
+  width: 70px;
+  height: 70px;
+}
+
+.inputContainer {
+  min-height: 75px;
+  text-align: center;
+  background-color: #ffcc00;
+}
+
+.background {
+  background-color: #ffcc00;
+}
+
+.categoriesContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "item1 item2 item3"
+  "item1 item2 item3"
+  "item1 item2 item3";
+  top: 50%;
+  min-height: 500px;
+  background-color: #ffcc00;
+}
+
+.categoriesContainer a {
+  font-size: 22px;
+  color: #3366ff;
+  text-decoration: none;
+  padding-left: 2vw;
+  padding-right: 5vw;
+}
+
+.categoriesContainer a:hover {
+  color: #00ffcc;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.categoriesContainer .cat1{
+  margin: 50px;
+  grid-area: item2;
+}
+
+.categoriesContainer .cat2{
+  margin: 50px;
+  grid-area: item1;
+}
+
+.categoriesContainer .cat3{
+  margin: 50px;
+  grid-area: item3;
+}
+
+.buttonWrapper {
+  text-align: right;
+}
+
+.image {
+  max-height: 200px!important;
+  height: 200px!important;
+  width: auto;
+  max-width: auto;
+}
